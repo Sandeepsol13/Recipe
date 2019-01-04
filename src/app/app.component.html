@@ -1,0 +1,13 @@
+<app-header (onnavclick)="RecipeShoppingList($event)"></app-header>
+<div class="contrainer">  
+  <div class="row">
+      <div class="col-md-12">
+        <app-recipes *ngIf="selected === 'recipe'"></app-recipes>        
+      </div>      
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <app-shopping-list *ngIf="selected != 'recipe'"></app-shopping-list>
+        </div>
+    </div>
+</div>
